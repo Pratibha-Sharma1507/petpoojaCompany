@@ -1,75 +1,70 @@
-# Project Setup Guide
+# Getting Started with Create React App
 
-## How the Project Works
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## 1. Database Setup (MySQL)
+## Available Scripts
 
-### Create a Database
-Open Command Prompt (CMD) or MySQL Workbench and run:
+In the project directory, you can run:
 
-CREATE DATABASE petpoojadb;
+### `npm start`
 
-### Import Database (Using CMD)
-To import an existing database, run:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-mysql -u root -p petpoojadb < petpoojadb.sql
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Replace "root" with your MySQL username and "database.sql" with your file name.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Check Tables
-To verify the tables, run:
+### `npm run build`
 
-SHOW TABLES;
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The database contains tables like:
-- employee (Stores employee details)
-- department (Stores department details)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 2. Backend Setup (Node.js + Express.js)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Install Dependencies
-Navigate to the backend folder and run:
+### `npm run eject`
 
-cd backend
-npm install
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### Run the Backend Server
-Start the backend server using:
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-npm start
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-If using nodemon for automatic restarts:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-npm start
+## Learn More
 
-The backend runs at http://localhost:8000
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### API Endpoints
-- Fetch all employees - GET /viewemployee
-- Add a new employee - POST /addemployee
-- Update an employee - PUT /editemployee/:id
-- Delete an employee - DELETE /deleteemployee/:id
-- Fetch highest salary (by department) - GET /highestsalary
-- Fetch employee count (by salary range) - GET /salaryrangewise
-- Fetch youngest employee details - GET /youngestemployee
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## 3. Frontend Setup (React.js)
+### Code Splitting
 
-### Install Dependencies
-Navigate to the frontend folder and run:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-cd Frontend 
-npm install
+### Analyzing the Bundle Size
 
-### Start the React App
-To start the frontend, run:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-cd view
-npm start
+### Making a Progressive Web App
 
-The frontend runs at http://localhost:3000
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Project is Now Set Up
-The backend is running at http://localhost:8000 and the frontend at http://localhost:3000. You can now use the application.
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
